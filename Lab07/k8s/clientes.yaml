@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: clientes-manuelzegarra
+  name: clientes-adderlyore
   labels:
     app: lab01
 spec:
@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: clientes-manuelzegarra
+  name: clientes-adderlyore
 spec:
   selector:
     matchLabels:
@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: lab01
-          image: mzegarra/java01
+          image: adderlyleo/java01
           resources:
             limits:
               cpu: 500m
